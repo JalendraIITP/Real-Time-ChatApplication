@@ -27,7 +27,7 @@ connectDB().then(() => {
   const io = new Server(server, {
       pingTimeout: 60000,
       cors: {
-          origin: 'http://localhost:3000',
+          origin: 'https://real-time-chatapplication-frontend.onrender.com',
       }
   });
 
@@ -68,8 +68,8 @@ connectDB().then(() => {
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000"],
-    method: ["POST","GET"],
+  origin: ["https://real-time-chatapplication-frontend.onrender.com"],
+    method: ["POST", "GET"],
     credentials: true
 }));
 
