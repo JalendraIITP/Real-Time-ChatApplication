@@ -5,11 +5,6 @@ import asyncHandler from "express-async-handler";
 const protect = asyncHandler(async (req, res, next) => {
   try {
     const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ", "")
-<<<<<<< HEAD
-    console.log(req.header("Authorization")?.replace("Bearer ", ""))
-=======
-    console.log(token);
->>>>>>> origin/main
     if (!token) {
       throw new Error("Unautorised Request");
     }
