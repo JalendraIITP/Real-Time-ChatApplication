@@ -27,10 +27,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "postinstall": "npx browserslist@latest --update-db",
+  "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+  "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+  "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+  "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
