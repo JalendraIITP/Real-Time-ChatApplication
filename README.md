@@ -32,5 +32,5 @@ A full-featured chat application developed and deployed using the MERN stack. Th
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/your-username/chat-application.git](https://github.com/JalendraIITP/Real-Time-ChatApplication)
-   cd chat-application
+   git clone https://github.com/JalendraIITP/Real-Time-ChatApplication
+   cd Real-Time-ChatApplication
